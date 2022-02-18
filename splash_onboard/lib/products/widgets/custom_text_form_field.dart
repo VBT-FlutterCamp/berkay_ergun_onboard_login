@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
+import 'package:splash_onboard/core/constants/strings/textfield_validation_strings.dart';
 
 class CustomTextFormField extends StatefulWidget {
   final TextEditingController codeController;
@@ -37,13 +38,13 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
             child: TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return "Bu alan boş kalmamalı";
+                  return ValidationStrings.isEmpty;
                 }
                 if (value.length < 6) {
-                  return "6 dan küçük olamaz";
+                  return ValidationStrings.cantBeSmall;
                 }
                 if (value.length > 20) {
-                  return "20 den büyük olamaz";
+                  return ValidationStrings.cantBeBig;
                 }
               },
               focusNode: widget.focusNode,

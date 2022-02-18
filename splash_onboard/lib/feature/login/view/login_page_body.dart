@@ -24,7 +24,7 @@ class _LoginPageBodyState extends State<LoginPageBody> {
   final _formKey = GlobalKey<FormState>();
   bool isValidate = false;
   bool isPassword = true;
-
+  final double _elevationDoubleValue = 1;
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -61,7 +61,7 @@ class _LoginPageBodyState extends State<LoginPageBody> {
       style: ElevatedButton.styleFrom(
         minimumSize: Size(context.width * 1, context.height * 0.09),
         primary: LoginColor.loginButtonColor,
-        elevation: 0,
+        elevation: _elevationDoubleValue,
       ),
     );
   }
