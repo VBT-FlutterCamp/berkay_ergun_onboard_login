@@ -19,8 +19,8 @@ https://user-images.githubusercontent.com/60674636/154355387-8dcaf7ca-30a8-4c6d-
 </div>
 <hr>
 <div align="center">
-<img  width="300"src="ReadmeAsset/14.png"></img>
-<img  width="300"src="ReadmeAsset/home.png"></img>
+<img  width="300"src="splash_onboard/ReadmeAsset/14.png"></img>
+<img  width="300"src="splash_onboard/ReadmeAsset/home.png"></img>
 
 </div>
 
