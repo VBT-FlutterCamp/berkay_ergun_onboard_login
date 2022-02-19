@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(context.durationLow, () {
+    Future.delayed(context.durationSlow, () {
       Navigator.pushNamedAndRemoveUntil(
         context,
         OnBoardView.routeName,

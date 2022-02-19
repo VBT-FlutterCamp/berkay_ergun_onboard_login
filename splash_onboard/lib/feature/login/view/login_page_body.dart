@@ -3,6 +3,7 @@ import 'package:kartal/kartal.dart';
 import 'package:splash_onboard/core/constants/colors/login_color.dart';
 import 'package:splash_onboard/core/constants/icon/login_icon.dart';
 import 'package:splash_onboard/core/constants/strings/login_strings.dart';
+import 'package:splash_onboard/feature/home/view/home_page_view.dart';
 
 import '../../../products/widgets/custom_text_form_field.dart';
 
@@ -56,7 +57,13 @@ class _LoginPageBodyState extends State<LoginPageBody> {
 
   ElevatedButton _buildLoginButton(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.pushNamedAndRemoveUntil(
+          context,
+          HomePageView.routeName,
+          (Route<dynamic> route) => false,
+        );
+      },
       child: const Text(LoginStrings.loginText),
       style: ElevatedButton.styleFrom(
         minimumSize: Size(context.width * 1, context.height * 0.09),
